@@ -115,3 +115,6 @@ InitTestScene*.unity*
 
 # Rendered videos
 /[Rr]enders/
+
+# macOS folder metadata
+.DS_Store
