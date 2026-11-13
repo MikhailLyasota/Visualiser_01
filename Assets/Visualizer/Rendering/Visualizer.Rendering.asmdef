@@ -1,0 +1,16 @@
+{
+    "name": "Visualizer.Rendering",
+    "rootNamespace": "Visualizer",
+    "references": [
+        "Visualizer.Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -159,6 +159,27 @@ namespace Visualizer
             }
         }
 
+        /// <summary>
+        /// Starts playback so that the next rendered frame shows exactly the start time. Used by the video
+        /// renderer, which starts the song between two frames.
+        /// </summary>
+        public void PlayFromNextFrame()
+        {
+            Play();
+            _startFrame = Time.frameCount + 1;
+        }
+
+        /// <summary>Length of the song in seconds: whichever is longer, the audio or the MIDI.</summary>
+        public double LengthSeconds
+        {
+            get
+            {
+                double length = Song != null ? Song.LengthSeconds + midiOffset : 0;
+                if (audioClip != null) length = Math.Max(length, audioClip.length);
+                return length;
+            }
+        }
+
         public void Stop()
         {
             IsPlaying = false;

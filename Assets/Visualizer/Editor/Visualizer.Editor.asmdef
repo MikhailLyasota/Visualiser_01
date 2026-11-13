@@ -2,7 +2,9 @@
     "name": "Visualizer.Editor",
     "rootNamespace": "Visualizer.Editor",
     "references": [
-        "Visualizer.Core"
+        "Visualizer.Core",
+        "Visualizer.Rendering",
+        "Unity.Recorder.Editor"
     ],
     "includePlatforms": [
         "Editor"
