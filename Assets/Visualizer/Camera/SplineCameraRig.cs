@@ -24,6 +24,8 @@ namespace Visualizer
         public Transform lookAt;
         [Tooltip("Aim this far away from the target's centre, in metres.")]
         public Vector3 lookOffset;
+        [Tooltip("0 = always look at the target. 1 = look where the camera is heading. In between = a mix.")]
+        [Range(0, 1)] public float lookAlongPath = 0f;
 
         [Header("Handheld feel")]
         [Tooltip("How far the camera floats off the path, in metres.")]
@@ -58,8 +60,15 @@ namespace Visualizer
             position += new Vector3(Noise(n, 11.3f), Noise(n, 27.9f), Noise(n, 43.1f)) * sway;
             transform.position = position;
 
-            Vector3 target = lookAt != null ? lookAt.position + lookOffset : (Vector3)path.EvaluatePosition(Mathf.Repeat(u + 0.01f, 1f));
-            Vector3 forward = target - position;
+            Vector3 ahead = (Vector3)path.EvaluatePosition(Mathf.Repeat(u + 0.02f, 1f)) - position;
+            Vector3 forward = ahead;
+            if (lookAt != null)
+            {
+                Vector3 toTarget = lookAt.position + lookOffset - position;
+                forward = lookAlongPath > 0f && ahead.sqrMagnitude > 1e-6f
+                    ? Vector3.Slerp(toTarget.normalized, ahead.normalized, lookAlongPath)
+                    : toTarget;
+            }
             if (forward.sqrMagnitude < 1e-6f) return;
 
             var rotation = Quaternion.LookRotation(forward, Vector3.up);

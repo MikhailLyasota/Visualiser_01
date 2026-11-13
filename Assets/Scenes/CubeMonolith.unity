@@ -4706,8 +4706,7 @@ MonoBehaviour:
   song: {fileID: 0}
   eventName: Snare
   alsoTriggerOn:
-  - SideStick
-  - Clap
+  - CrossStick
   attack: 0
   decay: 0.25
   velocitySensitivity: 1
@@ -6545,9 +6544,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Visualizer.Scenery::Visualizer.DriftField
   mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
   material: {fileID: 2100000, guid: 528fd987fd7c54283a0e9c8d727d0728, type: 2}
-  count: 450
+  count: 1100
   seed: 5
-  volumeSize: {x: 150, y: 90, z: 150}
+  volumeSize: {x: 320, y: 140, z: 320}
   followCamera: 0
   followTarget: {fileID: 0}
   clearRadius: 24
@@ -9862,186 +9861,226 @@ MonoBehaviour:
   - m_EditModeType: 1
     m_Knots:
     - Position:
-        x: 46
-        y: 12.62966
+        x: 40
+        y: 5
         z: 0
       TangentIn:
         x: -0
         y: -0
-        z: -10.764029
+        z: -9.494711
       TangentOut:
         x: 0
         y: 0
-        z: 11.084159
+        z: 8.675446
       Rotation:
         value:
-          x: -0.17365868
-          y: 0.096188135
-          z: 0.17606634
-          w: 0.9641531
+          x: -0.2548799
+          y: 0.054762002
+          z: 0.25789994
+          w: 0.93033594
     - Position:
-        x: 45.594994
-        y: 21.529257
-        z: 33.1267
+        x: 39.83717
+        y: 15
+        z: 23
       TangentIn:
         x: -0
         y: -0
-        z: -7.9532394
+        z: -8.744203
       TangentOut:
         x: 0
         y: 0
-        z: 8.422537
+        z: 9.859027
       Rotation:
         value:
-          x: 0.060969867
-          y: -0.36435
-          z: 0.023913251
-          w: 0.92895633
+          x: -0.17459823
+          y: -0.084023766
+          z: -0.014955537
+          w: 0.9809342
     - Position:
-        x: 10.9828005
-        y: 4.7484536
-        z: 33.801586
+        x: 29.999998
+        y: 24
+        z: 51.961525
       TangentIn:
         x: -0
         y: -0
-        z: -12.112693
+        z: -10.440586
       TangentOut:
         x: 0
         y: 0
-        z: 11.144093
+        z: 12.0000305
       Rotation:
         value:
-          x: -0.06668795
-          y: 0.64197254
-          z: -0.31706926
-          w: -0.69490373
+          x: -0.039031398
+          y: -0.28808796
+          z: 0.17479354
+          w: 0.9407067
     - Position:
-        x: -14.277132
-        y: -13.128836
-        z: 43.940487
+        x: -0.0000034094883
+        y: 10
+        z: 78
       TangentIn:
         x: -0
         y: -0
-        z: -9.48746
+        z: -11.595081
       TangentOut:
         x: 0
         y: 0
-        z: 9.673073
+        z: 12.001045
       Rotation:
         value:
-          x: 0.1911603
-          y: 0.68287337
-          z: -0.318157
-          w: -0.62922
+          x: 0.008930622
+          y: 0.6895211
+          z: -0.3742047
+          w: -0.6200417
     - Position:
-        x: -45.511406
-        y: -5.9123425
-        z: 33.065968
+        x: -31.000004
+        y: -12
+        z: 53.693573
       TangentIn:
         x: -0
         y: -0
-        z: -8.942047
+        z: -12.364719
       TangentOut:
         x: 0
         y: 0
-        z: 9.820873
+        z: 10.552438
       Rotation:
         value:
-          x: -0.059175637
-          y: 0.9327494
-          z: 0.278038
-          w: -0.22174698
+          x: 0.046884008
+          y: 0.95851034
+          z: -0.11064802
+          w: -0.25848955
     - Position:
-        x: -35.44365
-        y: 15.825759
-        z: -0.0000030985823
+        x: -38.105118
+        y: -7
+        z: 22.000002
       TangentIn:
         x: -0
         y: -0
-        z: -11.867801
+        z: -10.024355
       TangentOut:
         x: 0
         y: 0
-        z: 9.776509
+        z: 9.037372
       Rotation:
         value:
-          x: -0.13220641
-          y: 0.9732542
-          z: 0.17466867
-          w: 0.069199815
+          x: -0.051805146
+          y: 0.98005646
+          z: 0.19004045
+          w: -0.026269637
     - Position:
-        x: -37.54119
-        y: 20.2391
-        z: -27.27528
+        x: -36
+        y: 8
+        z: -0.00000314722
       TangentIn:
         x: -0
         y: -0
-        z: -8.790329
+        z: -8.953684
       TangentOut:
         x: 0
         y: 0
-        z: 10.332337
+        z: 9.347039
       Rotation:
         value:
-          x: -0.0072332094
-          y: 0.9864534
-          z: -0.100765906
-          w: 0.12924235
+          x: -0.14413436
+          y: 0.95209247
+          z: 0.26966575
+          w: -0.0050553964
     - Position:
-        x: -17.350992
-        y: 0.8621282
-        z: -53.400845
+        x: -43.30126
+        y: 21
+        z: -25.00001
       TangentIn:
         x: -0
         y: -0
-        z: -9.986386
+        z: -9.968984
       TangentOut:
         x: 0
         y: 0
-        z: 9.88882
+        z: 11.340244
       Rotation:
         value:
-          x: 0.20774344
-          y: 0.7115213
-          z: -0.21653657
-          w: 0.6353676
+          x: -0.10933694
+          y: 0.9774434
+          z: 0.18028729
+          w: 0.012100382
     - Position:
-        x: 10.923509
-        y: -13.917851
-        z: -33.619087
+        x: -34.999992
+        y: 30
+        z: -60.62178
       TangentIn:
         x: -0
         y: -0
-        z: -10.662716
+        z: -11.845514
       TangentOut:
         x: 0
         y: 0
-        z: 9.49879
+        z: 13.010822
       Rotation:
         value:
-          x: -0.0014130396
-          y: 0.54456675
-          z: -0.0066006808
-          w: 0.83869034
+          x: 0.008909562
+          y: 0.95770234
+          z: -0.01735794
+          w: 0.28709835
     - Position:
-        x: 37.704304
-        y: -2.4481301
-        z: -27.393757
+        x: 0.0000010255397
+        y: 16
+        z: -86
       TangentIn:
         x: -0
         y: -0
-        z: -9.027855
+        z: -12.693537
       TangentOut:
         x: 0
         y: 0
-        z: 9.407684
+        z: 13.0852
       Rotation:
         value:
-          x: -0.22552298
-          y: 0.39094338
-          z: 0.09942095
-          w: 0.88680226
+          x: 0.1944575
+          y: 0.67918855
+          z: -0.13223548
+          w: 0.6952718
+    - Position:
+        x: 33.999992
+        y: -5
+        z: -58.889732
+      TangentIn:
+        x: -0
+        y: -0
+        z: -14.118251
+      TangentOut:
+        x: 0
+        y: 0
+        z: 12.288872
+      Rotation:
+        value:
+          x: 0.17095706
+          y: 0.26240304
+          z: -0.042608127
+          w: 0.94873744
+    - Position:
+        x: 41.56923
+        y: -13
+        z: -23.999989
+      TangentIn:
+        x: -0
+        y: -0
+        z: -10.435643
+      TangentOut:
+        x: 0
+        y: 0
+        z: 9.45616
+      Rotation:
+        value:
+          x: -0.10619911
+          y: 0.043744177
+          z: 0.0046765925
+          w: 0.9933712
     m_MetaData:
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
     - Mode: 0
       Tension: 0.5
     - Mode: 0
@@ -10348,7 +10387,7 @@ Light:
   serializedVersion: 13
   m_Type: 1
   m_Color: {r: 0.8, g: 0.4, b: 1, a: 1}
-  m_Intensity: 10
+  m_Intensity: 6.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
@@ -29162,7 +29201,7 @@ Light:
   serializedVersion: 13
   m_Type: 1
   m_Color: {r: 0.45, g: 0.6, b: 1, a: 1}
-  m_Intensity: 20
+  m_Intensity: 13
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
@@ -49388,7 +49427,7 @@ Light:
   serializedVersion: 13
   m_Type: 2
   m_Color: {r: 1, g: 0.62, b: 0.35, a: 1}
-  m_Intensity: 271
+  m_Intensity: 1500
   m_Range: 90
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
@@ -50733,11 +50772,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Visualizer.Core::Visualizer.SongPlayer
   midi: {fileID: -3790078401409264444, guid: f6e00310863f64ed89325741cb8b60db, type: 3}
   mappings:
-  - {fileID: 11400000, guid: df71848dde7d54b64901ad6963c04d87, type: 2}
+  - {fileID: 11400000, guid: 903d761891a8340e28375d5f68ed5e9c, type: 2}
   audioClip: {fileID: 8300000, guid: c4176c8af1e764ac38c1881811b8b8b4, type: 3}
   midiOffset: 0
   playOnStart: 1
-  startTime: 0
+  startTime: 22
   manualTime: 0
   manualSongTime: 0
 --- !u!4 &1187784761
@@ -56008,10 +56047,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Visualizer.Camera::Visualizer.SplineCameraRig
   path: {fileID: 232744926}
-  secondsPerLap: 120
+  secondsPerLap: 160
   startPosition: 0
   lookAt: {fileID: 819679359}
   lookOffset: {x: 0, y: 0, z: 0}
+  lookAlongPath: 0
   sway: 0.4
   aimWander: 1.2
   roll: 2
@@ -56224,8 +56264,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322827209}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.09007774, y: -0.7031825, z: 0.09582007, w: 0.69874096}
-  m_LocalPosition: {x: 46.0338, y: 12.659517, z: -0.07710796}
+  m_LocalRotation: {x: 0.039398495, y: -0.7077287, z: 0.045601763, w: 0.7039094}
+  m_LocalPosition: {x: 40.0338, y: 5.0298576, z: -0.07710796}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -70612,7 +70652,7 @@ GameObject:
   - component: {fileID: 1661444574}
   - component: {fileID: 1661444573}
   m_Layer: 0
-  m_Name: Kick Down Light
+  m_Name: Splash + China Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70646,10 +70686,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Visualizer.Reactors::Visualizer.LightFlashReactor
   song: {fileID: 0}
-  eventName: Kick
-  alsoTriggerOn: []
+  eventName: Splash
+  alsoTriggerOn:
+  - China
   attack: 0
-  decay: 0.35
+  decay: 0.7
   velocitySensitivity: 1
   restBrightness: 0.02
   flashBrightness: 1
@@ -70875,7 +70916,7 @@ GameObject:
   - component: {fileID: 1663639542}
   - component: {fileID: 1663639541}
   m_Layer: 0
-  m_Name: Kick Up Light
+  m_Name: Kick Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71070,7 +71111,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 13
   m_Type: 0
-  m_Color: {r: 1, g: 0.28, b: 0.08, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 60000
   m_Range: 90
   m_SpotAngle: 140
@@ -72758,7 +72799,7 @@ GameObject:
   - component: {fileID: 1699527767}
   - component: {fileID: 1699527766}
   m_Layer: 0
-  m_Name: HiHat Closed Light
+  m_Name: HiHat Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72792,12 +72833,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Visualizer.Reactors::Visualizer.LightFlashReactor
   song: {fileID: 0}
-  eventName: HiHatClosed
+  eventName: HiHatOpen
   alsoTriggerOn:
+  - HiHatClosed
   - HiHatPedal
-  - Ride
   attack: 0
-  decay: 0.1
+  decay: 0.15
   velocitySensitivity: 1
   restBrightness: 0.02
   flashBrightness: 1
@@ -77433,7 +77474,7 @@ GameObject:
   - component: {fileID: 1802502555}
   - component: {fileID: 1802502554}
   m_Layer: 0
-  m_Name: HiHat Open + Toms Light
+  m_Name: Toms + Ride Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77467,14 +77508,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Visualizer.Reactors::Visualizer.LightFlashReactor
   song: {fileID: 0}
-  eventName: HiHatOpen
+  eventName: Tom1
   alsoTriggerOn:
-  - Tom1
   - Tom2
-  - Tom3
-  - Tom4
   - FloorTom1
   - FloorTom2
+  - Ride
   - RideBell
   attack: 0
   decay: 0.4
@@ -79323,7 +79362,7 @@ GameObject:
   - component: {fileID: 1861313476}
   - component: {fileID: 1861313475}
   m_Layer: 0
-  m_Name: Crash Light
+  m_Name: Crashes Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79357,10 +79396,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Visualizer.Reactors::Visualizer.LightFlashReactor
   song: {fileID: 0}
-  eventName: Crash
+  eventName: CrashFarLeft
   alsoTriggerOn:
-  - China
-  - Splash
+  - CrashLeft
+  - CrashRight
   attack: 0
   decay: 1.8
   velocitySensitivity: 1

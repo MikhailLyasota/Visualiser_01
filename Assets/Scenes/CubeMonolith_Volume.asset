@@ -92,7 +92,7 @@ MonoBehaviour:
     m_Value: 1000
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 85
+    m_Value: 115
   enableVolumetricFog:
     m_OverrideState: 1
     m_Value: 1
@@ -128,7 +128,7 @@ MonoBehaviour:
     m_Value: 64
   m_VolumetricFogBudget:
     m_OverrideState: 1
-    m_Value: 0.25
+    m_Value: 0.75
   m_ResolutionDepthRatio:
     m_OverrideState: 1
     m_Value: 0.5
@@ -536,13 +536,13 @@ MonoBehaviour:
     m_Value: 0
   top:
     m_OverrideState: 1
-    m_Value: {r: 0.3, g: 0.42, b: 1.2, a: 1}
+    m_Value: {r: 0.14, g: 0.2, b: 0.56, a: 1}
   middle:
     m_OverrideState: 1
-    m_Value: {r: 0.6, g: 0.45, b: 1, a: 1}
+    m_Value: {r: 0.27, g: 0.2, b: 0.47, a: 1}
   bottom:
     m_OverrideState: 1
-    m_Value: {r: 0.12, g: 0.12, b: 0.3, a: 1}
+    m_Value: {r: 0.055, g: 0.055, b: 0.135, a: 1}
   gradientDiffusion:
     m_OverrideState: 1
     m_Value: 1

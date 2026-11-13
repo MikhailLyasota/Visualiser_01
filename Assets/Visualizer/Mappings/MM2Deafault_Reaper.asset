@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5a74eaaf80a4f4aaddec8bb5010055, type: 3}
+  m_Name: MM2Deafault_Reaper
+  m_EditorClassIdentifier: Visualizer.Core::Visualizer.MidiMapping
+  trackNameContains: 
+  trackIndex: -1
+  channel: 0
+  entries:
+  - eventName: Kick
+    notes: 24000000i
+  - eventName: Snare
+    notes: 26000000i
+  - eventName: CrossStick
+    notes: 25000000i
+  - eventName: HiHatClosed
+    notes: 31000000320000003300000034000000i
+  - eventName: HiHatPedal
+    notes: 3800000039000000i
+  - eventName: HiHatOpen
+    notes: 350000003600000037000000i
+  - eventName: Tom1
+    notes: 2a000000i
+  - eventName: Tom2
+    notes: 2b0000002c000000i
+  - eventName: FloorTom1
+    notes: 2d0000002e000000i
+  - eventName: FloorTom2
+    notes: 2f00000030000000i
+  - eventName: CrashFarLeft
+    notes: 3a0000003b000000i
+  - eventName: Ride
+    notes: 4400000046000000i
+  - eventName: RideBell
+    notes: 45000000i
+  - eventName: China
+    notes: 4a0000004b000000i
+  - eventName: Splash
+    notes: 4c0000004d000000i
+  - eventName: CrashLeft
+    notes: 3c0000003d000000i
+  - eventName: CrashRight
+    notes: 4000000041000000i
