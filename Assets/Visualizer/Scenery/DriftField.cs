@@ -101,6 +101,21 @@ namespace Visualizer
 
         static float R(System.Random rng) => (float)rng.NextDouble();
 
+        Transform _sceneCamera;
+
+        // The camera in this object's own scene (several worlds can be loaded at once), else the main camera.
+        Transform SceneCamera()
+        {
+            if (_sceneCamera != null) return _sceneCamera;
+            foreach (var root in gameObject.scene.GetRootGameObjects())
+            {
+                var cam = root.GetComponentInChildren<Camera>(true);
+                if (cam != null) { _sceneCamera = cam.transform; break; }
+            }
+            if (_sceneCamera == null && Camera.main != null) _sceneCamera = Camera.main.transform;
+            return _sceneCamera;
+        }
+
         void LateUpdate()
         {
             if (mesh == null || material == null) return;
@@ -113,7 +128,7 @@ namespace Visualizer
             Vector3 center = origin;
             if (followCamera)
             {
-                var target = followTarget != null ? followTarget : (Camera.main != null ? Camera.main.transform : null);
+                var target = followTarget != null ? followTarget : SceneCamera();
                 if (target != null) center = target.position;
             }
 

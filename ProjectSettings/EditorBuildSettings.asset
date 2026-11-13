@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Show.unity
+    guid: 14ffe01de2b0f48be91950141958bd08
+  - enabled: 1
+    path: Assets/Scenes/CubeMonolith.unity
+    guid: 0c44da3704ef446e6927dd2ece5ac39c
+  - enabled: 1
+    path: Assets/Scenes/NeonCave.unity
+    guid: 3b23641e6cb0442d6bfb9b7bcc48d905
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1
   m_configObjects:

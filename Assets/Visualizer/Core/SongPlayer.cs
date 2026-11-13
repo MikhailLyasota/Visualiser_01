@@ -75,6 +75,9 @@ namespace Visualizer
             if (Current == this) Current = null;
         }
 
+        /// <summary>Makes this the song that reactors follow when several SongPlayers are loaded.</summary>
+        public void MakeCurrent() => Current = this;
+
         void Start()
         {
             if (playOnStart) Play();

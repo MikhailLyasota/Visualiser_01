@@ -55,7 +55,12 @@ namespace Visualizer
         Mesh _mesh;
         bool _dirty = true;
 
-        void OnEnable() => Rebuild();
+        void OnEnable()
+        {
+            // Rebuilding is only needed the first time; switching the object off and on again reuses the mesh.
+            if (_mesh == null || _dirty) Rebuild();
+            else GetComponent<MeshFilter>().sharedMesh = _mesh;
+        }
         void OnValidate() => _dirty = true;
         void Update() { if (_dirty) Rebuild(); }
 
