@@ -14,6 +14,8 @@ namespace Visualizer
         public SongPlayer song;
         [Tooltip("Event name from the MIDI Mapping, e.g. Kick, Snare, HiHatClosed, Crash.")]
         public string eventName = "Kick";
+        [Tooltip("Extra event names that trigger this too (e.g. Tom2, Tom3, FloorTom1).")]
+        public string[] alsoTriggerOn = new string[0];
 
         [Header("Envelope")]
         [Tooltip("Seconds to rise to full after the hit. 0 = instant.")]
@@ -38,10 +40,19 @@ namespace Visualizer
             if (player == null) return 0f;
 
             double now = player.MidiTime;
-            int i = player.IndexOfLastHit(eventName, now);
+            float level = EventLevel(player, eventName, now);
+            if (alsoTriggerOn != null)
+                for (int i = 0; i < alsoTriggerOn.Length; i++)
+                    level = Mathf.Max(level, EventLevel(player, alsoTriggerOn[i], now));
+            return level;
+        }
+
+        float EventLevel(SongPlayer player, string name, double now)
+        {
+            int i = player.IndexOfLastHit(name, now);
             if (i < 0) return 0f;
 
-            var hits = player.GetHits(eventName);
+            var hits = player.GetHits(name);
             float level = HitLevel(hits[i], now);
             // The previous hit may still be ringing while this one rises.
             if (i > 0) level = Mathf.Max(level, HitLevel(hits[i - 1], now));
