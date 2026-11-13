@@ -443,16 +443,16 @@ MonoBehaviour:
   - scene: NeonCave
     at: 17
     fade: 4
-  - scene: CubeMonolith
+  - scene: CubeInside
     at: 32
     fade: 4
-  - scene: NeonCave
+  - scene: CubeMonolith
     at: 49
     fade: 4
-  - scene: CubeMonolith
+  - scene: NeonCave
     at: 72
     fade: 4
-  - scene: NeonCave
+  - scene: CubeInside
     at: 89
     fade: 4
   - scene: CubeMonolith

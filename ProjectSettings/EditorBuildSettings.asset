@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/NeonCave.unity
     guid: 3b23641e6cb0442d6bfb9b7bcc48d905
   - enabled: 1
+    path: Assets/Scenes/CubeInside.unity
+    guid: 086120a424c614541b30f5c22b565d70
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1
   m_configObjects:
