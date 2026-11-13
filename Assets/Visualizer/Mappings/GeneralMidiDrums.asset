@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5a74eaaf80a4f4aaddec8bb5010055, type: 3}
+  m_Name: GeneralMidiDrums
+  m_EditorClassIdentifier: Visualizer.Core::Visualizer.MidiMapping
+  trackNameContains: 
+  trackIndex: -1
+  channel: 0
+  entries:
+  - eventName: Kick
+    notes: 2300000024000000i
+  - eventName: Snare
+    notes: 2600000028000000i
+  - eventName: SideStick
+    notes: 25000000i
+  - eventName: Clap
+    notes: 27000000i
+  - eventName: HiHatClosed
+    notes: 2a000000i
+  - eventName: HiHatPedal
+    notes: 2c000000i
+  - eventName: HiHatOpen
+    notes: 2e000000i
+  - eventName: Tom1
+    notes: 32000000i
+  - eventName: Tom2
+    notes: 30000000i
+  - eventName: Tom3
+    notes: 2f000000i
+  - eventName: Tom4
+    notes: 2d000000i
+  - eventName: FloorTom1
+    notes: 2b000000i
+  - eventName: FloorTom2
+    notes: 29000000i
+  - eventName: Crash
+    notes: 3100000039000000i
+  - eventName: Ride
+    notes: 330000003b000000i
+  - eventName: RideBell
+    notes: 35000000i
+  - eventName: China
+    notes: 34000000i
+  - eventName: Splash
+    notes: 37000000i
+  - eventName: Tambourine
+    notes: 36000000i
+  - eventName: Cowbell
+    notes: 38000000i
